@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/itemListFragment">
+
+    <fragment
+        android:id="@+id/itemListFragment"
+        android:name="com.assesment2.barangid.ui.ItemListFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/item_list_fragment">
+        <action
+            android:id="@+id/action_itemListFragment_to_itemDetailFragment"
+            app:destination="@id/itemDetailFragment" />
+        <action
+            android:id="@+id/action_itemListFragment_to_addItemFragment"
+            app:destination="@id/addItemFragment" />
+        <action
+            android:id="@+id/action_itemListFragment_to_aboutActivity"
+            app:destination="@id/aboutActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemDetailFragment"
+        android:name="com.assesment2.barangid.ui.ItemDetailFragment"
+        android:label="@string/item_detail_fragment_title"
+        tools:layout="@layout/fragment_detail_barang">
+        <argument
+            android:name="item_id"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_itemDetailFragment_to_addItemFragment"
+            app:destination="@id/addItemFragment" />
+        <action
+            android:id="@+id/action_itemDetailFragment_to_aboutActivity"
+            app:destination="@id/aboutActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/addItemFragment"
+        android:name="com.assesment2.barangid.ui.AddItemFragment"
+        android:label="{title}"
+        tools:layout="@layout/fragment_tambah_barang">
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <argument
+            android:name="item_id"
+            android:defaultValue="-1"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_addItemFragment_to_itemListFragment"
+            app:destination="@id/itemListFragment"
+            app:popUpTo="@id/itemListFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_addItemFragment_to_aboutActivity"
+            app:destination="@id/aboutActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/barangFragment"
+        android:name="com.assesment2.barangid.ui.barang.BarangActivity"
+        android:label="BarangFragment"
+        tools:layout="@layout/activity_barang">
+        <action
+            android:id="@+id/action_barangFragment_to_aboutActivity"
+            app:destination="@id/aboutActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/aboutActivity"
+        android:name="com.assesment2.barangid.AboutActivity"
+        android:label="AboutActivity" />
+</navigation>

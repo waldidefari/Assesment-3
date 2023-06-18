@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <item
+        android:id="@+id/menu_barang"
+        android:icon="@drawable/ic_baseline_view_list_24"
+        android:title="@string/barang"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_about"
+        android:title="Tentang Aplikasi"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_switch_layout"
+        android:icon="@drawable/baseline_grid_view_24"
+        android:title="@string/switch_layout"
+        app:showAsAction="always" />
+</menu>

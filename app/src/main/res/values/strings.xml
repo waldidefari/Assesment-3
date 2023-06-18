@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Barang-Id</string>
+    <string name="sell">Jual</string>
+    <string name="quantity">Jumlah Stok:</string>
+    <string name="quantity_req">Jumlah Stok <font color='#FF0000'>*</font></string>
+    <string name="item_name_req">Nama Barang <font color='#FF0000'>*</font></string>
+    <string name="item_price_req">Harga Barang <font color='#FF0000'>*</font></string>
+    <string name="save_action">Simpan</string>
+    <string name="item_detail_fragment_title">Rincian Barang</string>
+    <string name="add_fragment_title">Tambah Barang</string>
+    <string name="edit_fragment_title">Edit Barang</string>
+    <string name="price">Harga</string>
+    <string name="quantity_in_stock">Stok\n Barang</string>
+    <string name="item">Barang</string>
+    <string name="delete">Hapus</string>
+    <string name="delete_question">Anda Yakin Ingin Menghapus Barang?</string>
+    <string name="no">Tidak</string>
+    <string name="yes">Iya</string>
+    <string name="edit_item">Edit Barang</string>
+    <string name="add_new_item">Tambah Barang Baru</string>
+    <string name="koneksi_error">Koneksi bermasalah</string>
+    <string name="message">%1$s diklik!</string>
+    <string name="notif_title">Ada barang baru!</string>
+    <string name="notif_text">Cek sekarang biar nggak penasaran..</string>
+    <string name="channel_name">Updater</string>
+    <string name="channel_desc">Update data barang otomatis</string>
+    <string name="barang">List Barang</string>
+    <string name="tentang_aplikasi">Aplikasi BarangId adalah aplikasi untuk menghitung stok barang yang tersedia dan menampilkan data dari internet</string>
+    <string name="switch_layout">Ubah tampilan</string>
+</resources>
